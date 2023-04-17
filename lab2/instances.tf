@@ -23,7 +23,7 @@ resource "aws_instance" "public-instance-1" {
   user_data = <<EOF
                 #!/bin/bash
                 sudo apt update -y
-                sudo apt-get install mysql-server -y
+                sudo apt install mysql-server -y
                 sudo apt install -y apache2
                 systemctl start apache2
                 systemctl enable apache2
